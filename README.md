@@ -14,7 +14,7 @@ Un dialog se deschide pentru a solicita numele studentului, și, dacă numele es
 Notarea Studentului:
 Butonul "Notează Student" permite notarea unui student existent.
 Se selectează un student din lista afișată, iar apoi se introduce o notă prin intermediul unui dialog.
-Verifică dacă nota este în intervalul valid [0, 10]. Dacă da, atunci nota este atribuită studentului.
+Verifică dacă nota este în intervalul valid [1, 10]. Dacă da, atunci nota este atribuită studentului.
 
 Ștergerea Studentului:
 Butonul "Șterge Student" permite ștergerea unui student existent.
