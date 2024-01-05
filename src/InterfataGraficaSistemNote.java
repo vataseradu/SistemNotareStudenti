@@ -4,6 +4,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
 import java.util.stream.Collectors;
+
+
 class PanelCuImagineDeFundal extends JPanel {
     private Image imagineDeFundal;
 
@@ -100,7 +102,7 @@ public class InterfataGraficaSistemNote {
                     sistemNote.stergeStudent(studentSelectat.getNume());
                     updateListaStudenti(modelLista, sistemNote.getStudenti());
                 } else {
-                    JOptionPane.showMessageDialog(frame, "Vă rugăm să selectați un student pentru ștergere.");
+                    JOptionPane.showMessageDialog(frame, "Selectați un student pentru ștergere.");
                 }
             }
         });
@@ -110,7 +112,7 @@ public class InterfataGraficaSistemNote {
             @Override
             public void actionPerformed(ActionEvent e) {
                 double medie = sistemNote.calculeazaMedie();
-                JOptionPane.showMessageDialog(frame, "Media claselor este: " + medie);
+                JOptionPane.showMessageDialog(frame, "Media studenților e: " + medie);
             }
         });
 
@@ -145,6 +147,6 @@ public class InterfataGraficaSistemNote {
 }
 class NotaInvalidaException extends Exception {
     public NotaInvalidaException() {
-        super("Nota introdusa nu este cuprinsa intre 1 si 10.");
+        super("Nota introdusa nu este cuprinsă intre 1 si 10.");
     }
 }
